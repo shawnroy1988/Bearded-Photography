@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://shawnroy1988.github.io/Bearded-Photography/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Bearded Photography">
-<meta property="og:description" content="Portrait, family, pet and nature photography. Book your session online.">
+<meta property="og:description" content="Portrait, family, pet and nature photography. $50 sessions with 5 professionally edited photos. Book online.">
 <meta property="og:url" content="https://shawnroy1988.github.io/Bearded-Photography/">
 <meta property="og:image" content="https://shawnroy1988.github.io/Bearded-Photography/images/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -16,17 +16,18 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="preload" as="image" href="images/night-stars.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="styles.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Bearded Photography","url":"https://shawnroy1988.github.io/Bearded-Photography/","image":"https://shawnroy1988.github.io/Bearded-Photography/images/og.jpg","description":"Portrait, family, kids, pet and nature photography."}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header" id="top">
   <div class="wrap nav">
-    <a class="brand" href="#top" aria-label="Bearded Photography home"><img src="favicon.svg" alt="" width="32" height="32"> Bearded <span>Photography</span></a>
+    <a class="brand" href="#top" aria-label="Bearded Photography home"><img src="favicon.svg" alt="" width="34" height="34"><span class="bn">Bearded<em>Photography</em></span></a>
     <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span><span></span></button>
     <nav id="menu" aria-label="Main">
-      <a href="#portfolio">Portfolio</a><a href="#services">Services</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="#contact">Contact</a><a class="btn btn-sm" href="#book">Book a Session</a>
+      <a href="#portfolio">Portfolio</a><a href="#pricing">Pricing</a><a href="#process">Process</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="#contact">Contact</a><a class="btn btn-sm" href="#book">Book a Session</a>
     </nav>
   </div>
 </header>
@@ -35,16 +36,26 @@
 <section class="hero">
   <picture><source srcset="images/night-stars.webp" type="image/webp"><img src="images/night-stars.jpg" alt="Stars glowing in a night sky between dark tree silhouettes" fetchpriority="high"></picture>
   <div class="hero-text wrap">
-    <p class="eyebrow">Portraits · Family &amp; Kids · Pets · Nature</p>
-    <h1>Honest, natural photos of the people, pets &amp; places you love.</h1>
-    <p class="lead">Relaxed sessions, real moments, and images you'll want on your walls for years.</p>
-    <div class="cta"><a class="btn" href="#book">Book Your Session</a><a class="btn btn-ghost" href="#portfolio">View Portfolio</a></div>
+    <p class="eyebrow">Bearded Photography · Portrait · Family · Pet · Nature</p>
+    <h1>Real moments,<br><em>beautifully kept.</em></h1>
+    <p class="lead">Timeless, natural photographs of the people, pets and places you love, crafted with years of experience behind the lens and a calm, easygoing approach.</p>
+    <div class="cta"><a class="btn" href="#book">Book a $50 Session</a><a class="btn btn-ghost" href="#portfolio">Explore the Portfolio</a></div>
   </div>
+  <a class="scroll-cue" href="#trust" aria-label="Scroll to learn more"><span></span></a>
+</section>
+
+<section id="trust" class="trust" aria-label="Why clients choose us">
+  <ul class="wrap">
+    <li><strong>Locally owned</strong><span>Independent &amp; personal</span></li>
+    <li><strong>Portraits · Family · Pets · Nature</strong><span>Every session style</span></li>
+    <li><strong>5 edited photos</strong><span>Professionally retouched</span></li>
+    <li><strong>Satisfaction promise</strong><span>We make it right</span></li>
+  </ul>
 </section>
 
 <section id="portfolio" class="section wrap">
-  <header class="sec-head"><p class="eyebrow">Portfolio</p><h2>Recent work</h2></header>
-  <div class="filters" role="group" aria-label="Filter portfolio">
+  <header class="sec-head reveal"><p class="eyebrow">Portfolio</p><h2>A look at the work</h2><p class="muted">From joyful family afternoons to quiet starry nights, every frame is composed and edited with care.</p></header>
+  <div class="filters reveal" role="group" aria-label="Filter portfolio">
     <button type="button" class="active" data-filter="all" aria-pressed="true">All</button>
     <button type="button" data-filter="portraits" aria-pressed="false">Portraits</button>
     <button type="button" data-filter="family" aria-pressed="false">Family &amp; Kids</button>
@@ -54,42 +65,62 @@
   <div class="gallery" id="gallery"></div>
 </section>
 
-<section id="services" class="section alt">
+<section id="pricing" class="section dark">
   <div class="wrap">
-  <header class="sec-head"><p class="eyebrow">Services &amp; Packages</p><h2>Find the right session</h2>
-  <p class="note">Prices shown are placeholders: final pricing coming soon. Ask for a custom quote anytime.</p></header>
-  <div class="cards">
-    <article class="card"><h3>Portrait Session</h3><p class="price">[$ Price TBD]</p><ul><li>[Session length TBD]</li><li>One location</li><li>[# of edited images TBD]</li><li>Private online gallery</li></ul><a class="btn btn-sm" href="#book" data-pick="Portrait Session">Book this</a></article>
-    <article class="card featured"><span class="badge">Popular</span><h3>Family &amp; Kids</h3><p class="price">[$ Price TBD]</p><ul><li>[Session length TBD]</li><li>Up to [# TBD] people</li><li>[# of edited images TBD]</li><li>Private online gallery</li></ul><a class="btn btn-sm" href="#book" data-pick="Family &amp; Kids Session">Book this</a></article>
-    <article class="card"><h3>Pet Portraits</h3><p class="price">[$ Price TBD]</p><ul><li>[Session length TBD]</li><li>Patient, treat-friendly pace</li><li>[# of edited images TBD]</li><li>Private online gallery</li></ul><a class="btn btn-sm" href="#book" data-pick="Pet Portrait Session">Book this</a></article>
-    <article class="card"><h3>Nature &amp; Fine Art Prints</h3><p class="price">[$ Price TBD]</p><ul><li>Landscape, macro &amp; night sky</li><li>Prints in multiple sizes</li><li>Custom requests welcome</li><li>[Shipping details TBD]</li></ul><a class="btn btn-sm" href="#contact">Ask about prints</a></article>
+  <header class="sec-head reveal"><p class="eyebrow">Pricing</p><h2>One simple, honest package</h2><p>No hidden fees and no confusing tiers. Every session style is the same great value.</p></header>
+  <div class="package reveal">
+    <div class="pkg-main">
+      <p class="eyebrow">The Signature Session</p>
+      <p class="pkg-price"><span>$</span>50</p>
+      <ul class="pkg-list"><li>30-minute photo session</li><li>5 professionally edited photos</li><li>Personal guidance on posing &amp; wardrobe</li><li>Digital delivery of your final images</li></ul>
+      <a class="btn" href="#book">Reserve Your Session</a>
+    </div>
+    <div class="pkg-types">
+      <p class="pkg-sub">Choose your session style</p>
+      <a class="type" href="#book" data-pick="Portrait Session"><picture><source srcset="images/thumbs/portrait-sunglasses.webp" type="image/webp"><img src="images/thumbs/portrait-sunglasses.jpg" alt="" loading="lazy"></picture><span>Portrait</span></a>
+      <a class="type" href="#book" data-pick="Family &amp; Kids Session"><picture><source srcset="images/thumbs/tire-swing.webp" type="image/webp"><img src="images/thumbs/tire-swing.jpg" alt="" loading="lazy"></picture><span>Family &amp; Kids</span></a>
+      <a class="type" href="#book" data-pick="Pet Portrait Session"><picture><source srcset="images/thumbs/dog-bandana.webp" type="image/webp"><img src="images/thumbs/dog-bandana.jpg" alt="" loading="lazy"></picture><span>Pets</span></a>
+      <a class="type" href="#book" data-pick="Nature Session"><picture><source srcset="images/thumbs/asters.webp" type="image/webp"><img src="images/thumbs/asters.jpg" alt="" loading="lazy"></picture><span>Nature</span></a>
+    </div>
   </div>
   </div>
 </section>
 
-<section id="about" class="section wrap about">
-  <picture><source srcset="images/thumbs/tree-trunk.webp" type="image/webp"><img src="images/thumbs/tree-trunk.jpg" alt="Close-up of textured tree bark" loading="lazy" width="467" height="700"></picture>
-  <div>
-    <p class="eyebrow">About</p><h2>Hi, I'm the guy behind the beard.</h2>
-    <p>Bearded Photography is about slowing down and noticing things: a kid's grin mid-swing, a dog showing off a holiday bandana, wildflowers catching the last light, stars between the trees.</p>
-    <p>Sessions are easygoing and unposed where possible, so you get photos that actually look like you.</p>
-    <p class="placeholder">[Owner bio: your name, background, years shooting, and service area / location]</p>
+<section id="process" class="section wrap">
+  <header class="sec-head reveal"><p class="eyebrow">Our Process</p><h2>Effortless from first hello to final gallery</h2></header>
+  <ol class="process">
+    <li class="reveal"><span class="num">01</span><h3>Book online</h3><p>Choose your session style, date and time in under a minute.</p></li>
+    <li class="reveal"><span class="num">02</span><h3>Plan together</h3><p>We'll confirm by email and share tips on location, timing and what to wear.</p></li>
+    <li class="reveal"><span class="num">03</span><h3>Your session</h3><p>Thirty relaxed minutes. We guide you gently and capture the real moments in between.</p></li>
+    <li class="reveal"><span class="num">04</span><h3>Your photos</h3><p>Five carefully selected, professionally edited images delivered digitally, ready to print and share.</p></li>
+  </ol>
+</section>
+
+<section id="about" class="section alt">
+  <div class="wrap about">
+  <div class="about-img reveal"><picture><source srcset="images/thumbs/tree-trunk.webp" type="image/webp"><img src="images/thumbs/tree-trunk.jpg" alt="Close-up of textured tree bark in natural light" loading="lazy"></picture><picture><source srcset="images/thumbs/mushrooms.webp" type="image/webp"><img src="images/thumbs/mushrooms.jpg" alt="Mushrooms growing on a mossy log" loading="lazy" class="inset"></picture></div>
+  <div class="reveal">
+    <p class="eyebrow">About</p><h2>The eye behind the beard</h2>
+    <p>Bearded Photography was built on a simple belief: the best photographs feel like you. Over years of experience behind the camera, the focus has stayed the same: patience, natural light, and a genuine eye for the small details others overlook.</p>
+    <p>Whether it's a child's laugh mid-swing, a dog proudly wearing a holiday bandana, or wildflowers catching the last light of the day, every session is approached with the same care and craft.</p>
+    <p class="placeholder">[Optional: add your name, a personal line about yourself, and your town / service area]</p>
+    <a class="btn btn-outline" href="#book">Work with me</a>
+  </div>
   </div>
 </section>
 
-<section id="testimonials" class="section alt">
-  <div class="wrap">
-  <header class="sec-head"><p class="eyebrow">Kind Words</p><h2>What clients say</h2></header>
+<section id="testimonials" class="section wrap">
+  <header class="sec-head reveal"><p class="eyebrow">Kind Words</p><h2>Client stories</h2><p class="muted small">[Placeholder: replace with real client reviews, shared with permission]</p></header>
   <div class="quotes">
-    <blockquote class="placeholder-q"><p>"[Client testimonial goes here]"</p><cite>[Client name]</cite></blockquote>
-    <blockquote class="placeholder-q"><p>"[Client testimonial goes here]"</p><cite>[Client name]</cite></blockquote>
-    <blockquote class="placeholder-q"><p>"[Client testimonial goes here]"</p><cite>[Client name]</cite></blockquote>
-  </div>
+    <blockquote class="reveal"><p>"[Client review goes here]"</p><cite>[Client first name]</cite></blockquote>
+    <blockquote class="reveal"><p>"[Client review goes here]"</p><cite>[Client first name]</cite></blockquote>
+    <blockquote class="reveal"><p>"[Client review goes here]"</p><cite>[Client first name]</cite></blockquote>
   </div>
 </section>
 
-<section id="book" class="section wrap">
-  <header class="sec-head"><p class="eyebrow">Booking</p><h2>Book your session</h2><p>Pick a session, choose a date and time, and tell me a little about you. You'll get a confirmation once I review your request.</p></header>
+<section id="book" class="section alt">
+  <div class="wrap">
+  <header class="sec-head reveal"><p class="eyebrow">Booking</p><h2>Reserve your session</h2><p>30 minutes · $50 · 5 professionally edited photos. Pick a style, date and time and we'll confirm by email.</p></header>
   <form id="booking" class="booking" novalidate>
     <ol class="steps" aria-label="Booking progress"><li class="on">Session</li><li>Date</li><li>Time</li><li>Details</li></ol>
 
@@ -130,7 +161,7 @@
   <div class="confirm" id="confirm" hidden tabindex="-1">
     <h3>Thank you, your request is in! 🎉</h3>
     <p id="confirmText"></p>
-    <p class="muted">This is a booking request. I'll email you to confirm the time and next steps (deposit, location).</p>
+    <p class="muted">This is a booking request. I'll email you to confirm the time and next steps (location and any details).</p>
     <button type="button" class="btn btn-ghost" id="again">Book another session</button>
   </div>
 
@@ -139,34 +170,38 @@
     <p>Use my live calendar below for real-time availability.</p>
     <iframe id="calframe" title="Live booking calendar" loading="lazy"></iframe>
   </div>
-</section>
-
-<section id="faq" class="section alt">
-  <div class="wrap narrow">
-  <header class="sec-head"><p class="eyebrow">FAQ</p><h2>Good questions</h2></header>
-  <details><summary>How do I book?</summary><p>Use the booking form above to choose a session type, date and time. I'll confirm by email, usually within [response time TBD].</p></details>
-  <details><summary>Is a deposit required?</summary><p>[Deposit / payment policy TBD]</p></details>
-  <details><summary>Where do sessions take place?</summary><p>Outdoors at parks, trails, your backyard, or a spot that means something to you. [Service area TBD]</p></details>
-  <details><summary>When will I get my photos?</summary><p>Edited images are delivered in a private online gallery within [turnaround TBD].</p></details>
-  <details><summary>What if it rains or I need to reschedule?</summary><p>Weather happens. We'll reschedule at no charge for bad weather. [Reschedule / cancellation policy TBD]</p></details>
-  <details><summary>Do you photograph pets that won't sit still?</summary><p>Absolutely. Bring treats and a favorite toy; we go at your pet's pace.</p></details>
   </div>
 </section>
 
-<section id="contact" class="section wrap">
-  <header class="sec-head"><p class="eyebrow">Contact</p><h2>Say hello</h2></header>
-  <div class="contact">
-    <ul class="contact-list">
-      <li><strong>Email:</strong> <a class="js-email" href="#">[Your email here]</a></li>
-      <li><strong>Phone:</strong> <span class="placeholder">[Your phone here]</span></li>
-      <li><strong>Location:</strong> <span class="placeholder">[Your city / service area here]</span></li>
-    </ul>
-    <form id="contactForm" class="contact-form">
+<section id="faq" class="section wrap narrow">
+  <header class="sec-head reveal"><p class="eyebrow">FAQ</p><h2>Frequently asked questions</h2></header>
+  <details><summary>What's included in a session?</summary><p>Every session is 30 minutes for $50 and includes 5 professionally edited photos delivered digitally. That covers Portrait, Family &amp; Kids, Pet and Nature sessions alike.</p></details>
+  <details><summary>How do I book?</summary><p>Use the booking form above to pick your session style, date and time. We'll email you to confirm the details.</p></details>
+  <details><summary>Can I purchase more than 5 edited photos?</summary><p>[Additional photo pricing TBD]. Just ask after your session.</p></details>
+  <details><summary>Is a deposit required?</summary><p>[Deposit / payment policy TBD]</p></details>
+  <details><summary>Where do sessions take place?</summary><p>Usually outdoors: parks, trails, your backyard or a place that means something to you. [Service area TBD]</p></details>
+  <details><summary>When will I receive my photos?</summary><p>Your edited images are delivered digitally within [turnaround TBD].</p></details>
+  <details><summary>What if the weather doesn't cooperate?</summary><p>We'll find a new date that works for you. [Reschedule / cancellation policy TBD]</p></details>
+  <details><summary>My pet (or toddler) won't sit still. Is that okay?</summary><p>Absolutely. Thirty minutes at their pace, with plenty of patience. Bring treats or a favorite toy.</p></details>
+</section>
+
+<section id="contact" class="section dark">
+  <div class="wrap contact">
+    <div class="reveal">
+      <p class="eyebrow">Contact</p><h2>Let's create something lasting</h2>
+      <p>Questions before you book? Send a note and we'll get back to you promptly.</p>
+      <ul class="contact-list">
+        <li><strong>Email</strong><a href="mailto:Shawroy1988@gmail.com">Shawroy1988@gmail.com</a></li>
+        <li><strong>Phone</strong><span class="placeholder">[Your phone here]</span></li>
+        <li><strong>Area</strong><span class="placeholder">[Your city / service area here]</span></li>
+      </ul>
+    </div>
+    <form id="contactForm" class="contact-form reveal">
       <label>Name*<input type="text" name="name" required autocomplete="name"></label>
       <label>Email*<input name="email" type="email" required autocomplete="email"></label>
       <label>Message*<textarea name="message" rows="4" required></textarea></label>
       <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <button class="btn" type="submit">Send message</button>
+      <button class="btn" type="submit">Send Message</button>
       <p class="err" role="status" id="contactMsg"></p>
     </form>
   </div>
@@ -175,9 +210,11 @@
 
 <footer class="footer">
   <div class="wrap foot">
-    <p>© <span id="yr"></span> Bearded Photography. All photos © Bearded Photography; please don't use without permission.</p>
-    <nav aria-label="Social"><a href="#" data-social="instagram">Instagram</a><a href="#" data-social="facebook">Facebook</a><a href="https://x.com/" data-social="x">X</a><a href="privacy.html">Privacy</a></nav>
+    <div><a class="brand" href="#top"><img src="favicon.svg" alt="" width="28" height="28"><span class="bn">Bearded<em>Photography</em></span></a><p>Portrait · Family · Pet · Nature<br><a href="mailto:Shawroy1988@gmail.com">Shawroy1988@gmail.com</a></p></div>
+    <nav aria-label="Footer"><a href="#portfolio">Portfolio</a><a href="#pricing">Pricing</a><a href="#book">Book</a><a href="privacy.html">Privacy</a></nav>
+    <nav aria-label="Social"><a href="#" data-social="instagram">Instagram</a><a href="#" data-social="facebook">Facebook</a><a href="#" data-social="x">X</a></nav>
   </div>
+  <p class="wrap copy">© <span id="yr"></span> Bearded Photography. All photographs © Bearded Photography.</p>
 </footer>
 
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>

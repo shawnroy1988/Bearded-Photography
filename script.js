@@ -47,15 +47,18 @@
     if (e.key === 'Tab') { const f = $$('button', lb); const i = f.indexOf(document.activeElement); if (e.shiftKey && i <= 0) { e.preventDefault(); f[f.length - 1].focus(); } else if (!e.shiftKey && i === f.length - 1) { e.preventDefault(); f[0].focus(); } } });
 
   /* Form delivery: endpoint, else mailto */
+  const mailto = (subject, data) => { const body = Object.entries(data).map(([k, v]) => `${k}: ${v}`).join('\n');
+    location.href = `mailto:${C.email || ''}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`; return 'mailto'; };
   async function deliver(subject, data) {
     if (C.formEndpoint) {
-      const fd = new FormData(); fd.append('_subject', subject); Object.entries(data).forEach(([k, v]) => fd.append(k, v));
-      const r = await fetch(C.formEndpoint, { method: 'POST', body: fd, headers: { Accept: 'application/json' } });
-      if (!r.ok) throw new Error('send failed'); return 'sent';
+      try {
+        const fd = new FormData(); fd.append('_subject', subject); fd.append('_template', 'table'); fd.append('_captcha', 'false'); fd.append('_replyto', data.Email || '');
+        Object.entries(data).forEach(([k, v]) => fd.append(k, v));
+        const r = await fetch(C.formEndpoint, { method: 'POST', body: fd, headers: { Accept: 'application/json' } });
+        if (r.ok) return 'sent';
+      } catch (_) { /* network/service issue: fall back to email app */ }
     }
-    const body = Object.entries(data).map(([k, v]) => `${k}: ${v}`).join('\n');
-    location.href = `mailto:${C.email || ''}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    return 'mailto';
+    return mailto(subject, data);
   }
 
   /* Booking wizard */
@@ -116,6 +119,11 @@
   goto(1);
 
   if (C.schedulerUrl) { $('#calembed').hidden = false; $('#calframe').src = C.schedulerUrl + (C.schedulerUrl.includes('?') ? '&' : '?') + 'embed=true'; }
+
+  /* Reveal on scroll */
+  const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 }) : null;
+  $$('.reveal').forEach(el => io ? io.observe(el) : el.classList.add('in'));
+  const hdr = $('.site-header'); const onS = () => hdr.classList.toggle('scrolled', scrollY > 40); addEventListener('scroll', onS, { passive: true }); onS();
 
   /* Contact */
   $('#contactForm').addEventListener('submit', async e => {
